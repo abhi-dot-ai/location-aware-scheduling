@@ -8,29 +8,17 @@ tags:
 - algorithm
 - zip-code
 - client-flow
-summary: Single source of truth for how client location is captured, validated, and
-  used to calculate appointment slot visibility, travel-time blocking, and conflict
-  detection. Replaces location-aware-scheduling-booking-logic.md and
-  zip-code-bridge-logic.md.
-supersedes:
-- location-aware-scheduling-booking-logic.md
-- zip-code-bridge-logic.md
----
 
 ## Location-Aware Booking Logic (Unified Specification)
 
 ### Purpose of this document
 
 This is the **single, complete description** of how a client's location determines
-which appointment slots they can see and book. It merges two earlier documents that
-together described only half the picture each:
+which appointment slots they can see and book.
 
-- the original booking-logic doc described the **travel-time algorithm**, but always
-  assumed a `client_location` already existed — it never said where that location
-  came from
-- the zip-code-bridge doc described **where the location comes from** (zip code →
-  centroid → street address), but treated the travel-time algorithm as an external
-  black box
+Single source of truth for how client location is captured, validated, and
+  used to calculate appointment slot visibility, travel-time blocking, and conflict
+  detection. 
 
 Read top to bottom and you have the whole system: how an agent becomes bookable in a
 city, how a client's location is captured and progressively refined, and how that
