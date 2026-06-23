@@ -12,7 +12,6 @@ tags:
 ## Location-Aware Booking Logic (Unified Specification)
 
 ### Purpose of this document
-
 This is the **single, complete description** of how a client's location determines
 which appointment slots they can see and book.
 
